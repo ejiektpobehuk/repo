@@ -1,0 +1,18 @@
+pkgbase = ruby-hiera-eyaml
+	pkgdesc = OpenSSL Encryption backend for Hiera
+	pkgver = 3.2.0
+	pkgrel = 1
+	url = https://github.com/voxpupuli/hiera-eyaml
+	arch = any
+	license = MIT
+	makedepends = ruby-rdoc
+	depends = ruby
+	depends = ruby-optimist
+	depends = ruby-highline-1.6
+	noextract = hiera-eyaml-3.2.0.gem
+	options = !emptydirs
+	source = https://rubygems.org/downloads/hiera-eyaml-3.2.0.gem
+	sha256sums = ad9ac5628691a0e8ceb27d3ad7aeeee227eec5424b0c10b2b475b0b49aedb59d
+
+pkgname = ruby-hiera-eyaml
+
