@@ -1,6 +1,6 @@
 # Maintainer: Brian Allred <brian.d.allred@gmail.com>
 
-pkgname=gpmdp-git
+pkgname=gpmdp
 _name=Google-Play-Music-Desktop-Player-UNOFFICIAL-
 pkgver=4.7.1
 pkgrel=1
@@ -9,23 +9,16 @@ arch=('i686' 'x86_64')
 url="http://www.googleplaymusicdesktopplayer.com"
 license=('MIT')
 depends=('desktop-file-utils' 'hicolor-icon-theme' 'nss' 'libxss' 'gtk3')
-makedepends=('nodejs' 'electron' 'npm' 'git' 'gcc' 'libx11')
+makedepends=('nodejs-lts-dubnium' 'python' 'electron' 'npm' 'git' 'gcc' 'libx11')
 optdepends=('apparmor' 'avahi' 'libgnome-keyring')
 provides=('gpmdp')
-replaces=('google-play-music-desktop-player-git')
-conflicts=('google-play-music-desktop-player-git' 'gpmdp')
-install=gpmdp-git.install
-source=("git+https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-.git"
+install=gpmdp.install
+source=("git+https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-.git#tag=v${pkgver}"
         "gpmdp.desktop"
-        "gpmdp-git.install")
+        "gpmdp.install")
 md5sums=('SKIP'
          '8d23ff434999f7ec1e6e35d3344a1bb2'
          'bca71957329125ca4c55929f07091cce')
-
-pkgver() {
-  cd "$srcdir/$_name"
-  git describe --tags | sed 's/^v//' | sed 's/-/./g'
-}
 
 build() {
   cd "$srcdir/$_name"

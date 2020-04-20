@@ -1,13 +1,14 @@
-pkgbase = gpmdp-git
+pkgbase = gpmdp
 	pkgdesc = A beautiful cross platform Desktop Player for Google Play Music.
 	pkgver = 4.7.1
 	pkgrel = 1
 	url = http://www.googleplaymusicdesktopplayer.com
-	install = gpmdp-git.install
+	install = gpmdp.install
 	arch = i686
 	arch = x86_64
 	license = MIT
-	makedepends = nodejs
+	makedepends = nodejs-lts-dubnium
+	makedepends = python
 	makedepends = electron
 	makedepends = npm
 	makedepends = git
@@ -22,15 +23,12 @@ pkgbase = gpmdp-git
 	optdepends = avahi
 	optdepends = libgnome-keyring
 	provides = gpmdp
-	conflicts = google-play-music-desktop-player-git
-	conflicts = gpmdp
-	replaces = google-play-music-desktop-player-git
-	source = git+https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-.git
+	source = git+https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-.git#tag=v4.7.1
 	source = gpmdp.desktop
-	source = gpmdp-git.install
+	source = gpmdp.install
 	md5sums = SKIP
 	md5sums = 8d23ff434999f7ec1e6e35d3344a1bb2
 	md5sums = bca71957329125ca4c55929f07091cce
 
-pkgname = gpmdp-git
+pkgname = gpmdp
 
