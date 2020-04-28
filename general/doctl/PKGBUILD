@@ -3,7 +3,7 @@
 
 pkgname=doctl
 pkgver=1.42.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A command line tool for DigitalOcean services'
 arch=('i686' 'x86_64')
 url='https://github.com/digitalocean/doctl'
