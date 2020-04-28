@@ -8,7 +8,7 @@ pkgdesc='A command line tool for DigitalOcean services'
 arch=('i686' 'x86_64')
 url='https://github.com/digitalocean/doctl'
 license=('APACHE')
-makedepends=('go' 'git')
+makedepends=('go-pie' 'git')
 conflicts=('doctl-bin')
 source=("git+https://github.com/digitalocean/${pkgname}.git")
 
