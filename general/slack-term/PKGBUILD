@@ -13,7 +13,7 @@ noextract=("slack-term-${pkgver}.tar.gz")
 license=('MIT')
 conflicts=('slack-term-bin')
 options=()
-makedepends=("go")
+makedepends=("go-pie")
 md5sums=('77c64a2aac37d65cbcfe2cecab043b9f'
          '9cdd35c2d48f6d899333ab3721a6464b')
 
