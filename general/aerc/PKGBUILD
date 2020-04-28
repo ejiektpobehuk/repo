@@ -4,13 +4,13 @@
 
 pkgname=aerc
 pkgver=0.3.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Email Client for your Terminal'
 arch=('x86_64')
 url='https://git.sr.ht/~sircmpwn/aerc'
 license=('MIT')
 depends=('w3m' 'dante' 'notmuch')
-makedepends=('go' 'git' 'scdoc')
+makedepends=('go-pie' 'git' 'scdoc')
 provides=('aerc')
 conflicts=('aerc')
 source=("$pkgname-$pkgver.tar.gz::https://git.sr.ht/~sircmpwn/${pkgname}/archive/${pkgver}.tar.gz")
