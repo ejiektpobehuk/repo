@@ -10,9 +10,9 @@ depends=('glibc')
 optdepends=(
   'docker: sonobuoy images subcommand'
   'kubectl: advances workflows')
-makedepends=('go' 'gzip' 'git')
+makedepends=('go-pie' 'gzip' 'git')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz")
-sha256sums=('2443b098de78c457776ce6d13803547d33ffd563984a269be6d449886652592c')
+sha256sums=(SKIP)
 
 build() {
   # illegal packaging technique
