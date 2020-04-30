@@ -11,8 +11,7 @@ depends=('polkit')
 makedepends=('meson' 'ninja' 'pkg-config')
 source=("https://github.com/FeralInteractive/gamemode/releases/download/$pkgver/$pkgname-$pkgver.tar.xz"
 )
-sha256sums=('3a5ea5aafe1b7ec69ac2c054198e9aa6b6fd4dd8ee7a8bcfb71d0b0a40313101'
-)
+sha256sums=(SKIP)
 
 build() {
   meson gamemode-$pkgver build --prefix /usr --libexecdir lib/gamemode -Dwith-pam-group=gamemode -Dwith-systemd-user-unit-dir=/usr/lib/systemd/user
