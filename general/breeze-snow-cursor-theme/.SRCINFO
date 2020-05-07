@@ -1,0 +1,13 @@
+pkgbase = breeze-snow-cursor-theme
+	pkgdesc = Breeze Snow cursor theme.
+	pkgver = 1.0
+	pkgrel = 3
+	url = https://kver.wordpress.com/2015/01/09/curses-i-mean-cursors/
+	arch = any
+	license = GPL
+	makedepends = unzip
+	source = https://code.jpope.org/jpope/breeze_cursor_sources/raw/master/breeze-snow-cursor-theme.zip
+	sha256sums = 1390272e693f258dc55f86fbd5c99f0f36cfb4e71f22e9062b8d6ff14483562e
+
+pkgname = breeze-snow-cursor-theme
+
