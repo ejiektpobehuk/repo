@@ -7,7 +7,7 @@ pkgdesc="A customizable, syntax-aware linter for prose"
 arch=('i686' 'x86_64')
 url="https://github.com/errata-ai/vale"
 license=('MIT')
-makedepends=('go' 'go-bindata' 'rsync')
+makedepends=('go-pie' 'go-bindata' 'rsync')
 source=("${pkgname}-${pkgver}.zip::${url}/archive/v${pkgver}.zip")
 sha256sums=('ae7cc59c85a86a6328bea2f85845c34bd4a46071959e5cf7982e337e5532e287')
 
