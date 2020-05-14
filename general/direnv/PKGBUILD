@@ -8,7 +8,7 @@ pkgdesc='a shell extension that manages your environment'
 arch=('x86_64' 'i686' 'armv7h')
 url='https://direnv.net'
 license=('MIT')
-makedepends=('go')
+makedepends=('go-pie')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/direnv/direnv/archive/v$pkgver.tar.gz")
 sha256sums=('ce5551b09f71fe26111bbf94a09cfdbce14794ec9a723015b67efea804986d68')
 
