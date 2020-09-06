@@ -1,0 +1,6 @@
+*.pkg.tar.xz
+bmap-tools/
+pkg/
+src/
+/*.tgz
+/*.tar.gz
