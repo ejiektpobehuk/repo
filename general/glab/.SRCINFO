@@ -1,7 +1,7 @@
 pkgbase = glab
 	pkgdesc = Gitlab CLI tool helping to work seamlessly with Gitlab from the command line
 	pkgver = 1.11.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/profclems/glab
 	arch = x86_64
 	license = MIT
