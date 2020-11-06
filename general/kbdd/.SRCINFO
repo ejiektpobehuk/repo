@@ -1,4 +1,4 @@
-pkgbase = kbdd-git
+pkgbase = kbdd
 	pkgdesc = Simple daemon and library to make per window layout
 	pkgver = 0.7.1.r11.g7f3d9d2
 	pkgrel = 1
@@ -14,8 +14,8 @@ pkgbase = kbdd-git
 	depends = dbus-glib
 	provides = kbdd
 	conflicts = kbdd
-	source = git+https://github.com/qnikst/kbdd.git
+	source = git+https://github.com/qnikst/kbdd.git#commit=7f3d9d27a4084a34f7261fe9994fcfb881ff6b0e
 	md5sums = SKIP
 
-pkgname = kbdd-git
+pkgname = kbdd
 

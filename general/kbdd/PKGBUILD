@@ -2,7 +2,7 @@
 # Contributors: Volodymyr Medvid <vmedvid@riseup.net>,
 #               stepych <msaleksandr@gmail.com>
 
-pkgname=kbdd-git
+pkgname=kbdd
 pkgrel=1
 pkgver=0.7.1.r11.g7f3d9d2
 provides=('kbdd')
@@ -13,7 +13,7 @@ url="https://github.com/qnikst/kbdd"
 license=('GPL3')
 makedepends=('git' 'automake' 'autoconf' 'python')
 depends=('libx11' 'dbus-glib')
-source=("git+https://github.com/qnikst/kbdd.git")
+source=("git+https://github.com/qnikst/kbdd.git#commit=7f3d9d27a4084a34f7261fe9994fcfb881ff6b0e")
 md5sums=('SKIP')
 
 build() {
