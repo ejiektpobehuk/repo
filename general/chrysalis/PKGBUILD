@@ -7,8 +7,8 @@ pkgrel=1
 arch=('x86_64')
 url='https://github.com/keyboardio/Chrysalis'
 license=('GPL3')
-depends=('fuse2' 'uucp')
-makedepends=('yarn')
+depends=('fuse2' 'uucp' 'zlib')
+makedepends=('yarn' 'git' 'node-gyp')
 source=("$url/archive/$pkgname-$pkgver.tar.gz")
 sha256sums=('224e73ad733ecc03da5caa6fd460ed7d63f65f2d15134397f7eb978bdf174f4e')
 

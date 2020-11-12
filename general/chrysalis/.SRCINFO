@@ -6,8 +6,11 @@ pkgbase = chrysalis
 	arch = x86_64
 	license = GPL3
 	makedepends = yarn
+	makedepends = git
+	makedepends = node-gyp
 	depends = fuse2
 	depends = uucp
+	depends = zlib
 	source = https://github.com/keyboardio/Chrysalis/archive/chrysalis-0.7.9.tar.gz
 	sha256sums = 224e73ad733ecc03da5caa6fd460ed7d63f65f2d15134397f7eb978bdf174f4e
 
