@@ -1,7 +1,8 @@
 # Maintainer: morpheusthewhite <zffromGerace@hotmail.it>
 
-pkgname=spicetify-themes-git
-pkgver=r424.17d0670
+pkgname=spicetify-themes
+pkgver=r513.512ead3
+_commit=512ead30c900c8f412cc07f11870751f4b91c89a
 pkgrel=1
 pkgdesc="A community-driven collection of themes for spicetify"
 arch=('any')
@@ -16,7 +17,7 @@ replaces=()
 backup=()
 options=()
 install=spicetify-themes-git.install
-source=("$pkgname"::"git+https://github.com/morpheusthewhite/spicetify-themes")
+source=("$pkgname"::"git+https://github.com/morpheusthewhite/spicetify-themes#commit=$_commit")
 noextract=()
 md5sums=('SKIP')
 

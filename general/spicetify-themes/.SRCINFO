@@ -1,6 +1,6 @@
-pkgbase = spicetify-themes-git
+pkgbase = spicetify-themes
 	pkgdesc = A community-driven collection of themes for spicetify
-	pkgver = r424.17d0670
+	pkgver = r513.512ead3
 	pkgrel = 1
 	url = https://github.com/morpheusthewhite/spicetify-themes
 	install = spicetify-themes-git.install
@@ -10,8 +10,8 @@ pkgbase = spicetify-themes-git
 	depends = spicetify-cli
 	provides = spicetify-themes
 	conflicts = spicetify-themes
-	source = spicetify-themes-git::git+https://github.com/morpheusthewhite/spicetify-themes
+	source = spicetify-themes::git+https://github.com/morpheusthewhite/spicetify-themes#commit=512ead30c900c8f412cc07f11870751f4b91c89a
 	md5sums = SKIP
 
-pkgname = spicetify-themes-git
+pkgname = spicetify-themes
 
