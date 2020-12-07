@@ -15,12 +15,12 @@ replaces=()
 backup=()
 options=()
 install="${pkgname}.install"
-source=("$pkgname"::"git+https://github.com/morpheusthewhite/spicetify-themes#commit=$_commit")
+source=("${pkgname}-${_commit}"::"git+https://github.com/morpheusthewhite/spicetify-themes#commit=$_commit")
 noextract=()
 md5sums=('SKIP')
 
 pkgver() {
-    cd "$pkgname"
+    cd "${pkgname}-${_commit}"
     ( set -o pipefail
       git describe --long 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' ||
       printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
@@ -30,9 +30,9 @@ pkgver() {
 package() {
     mkdir -p "${pkgdir}"/usr/share/spicetify-cli/Extensions
 
-    cp -R "$srcdir/${pkgname}" "${pkgdir}"/usr/share/spicetify-cli/Themes
-    rm -r "${pkgdir}"/usr/share/spicetify-cli/Themes/README.md "${pkgdir}"/usr/share/spicetify-cli/Themes/LICENSE
+    cp -R "$srcdir/${pkgname}-${_commit}" "${pkgdir}"/usr/share/spicetify-cli/Themes
+    rm -r "${pkgdir}"/usr/share/spicetify-cli/Themes/README.md "${pkgdir}"/usr/share/spicetify-cli/Themes/.git
 
     # for Dribbblish theme
-    cp -R "$srcdir/${pkgname}/Dribbblish/dribbblish.js" "${pkgdir}"/usr/share/spicetify-cli/Extensions/dribbblish.js
+    cp -R "$srcdir/${pkgname}-${_commit}/Dribbblish/dribbblish.js" "${pkgdir}"/usr/share/spicetify-cli/Extensions/dribbblish.js
 }
