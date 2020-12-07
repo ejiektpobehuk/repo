@@ -1,0 +1,6 @@
+post_install(){
+    echo "To make themes available put them in place where spicetify is looking for them"
+    echo "# ln -s /usr/share/spicetify-cli/Themes ~/.config/spicetify/Themes"
+    echo "# ln -s /usr/share/spicetify-cli/Extensions ~/.config/spicetify/Extensions "
+}
+

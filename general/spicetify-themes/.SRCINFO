@@ -3,13 +3,11 @@ pkgbase = spicetify-themes
 	pkgver = r513.512ead3
 	pkgrel = 1
 	url = https://github.com/morpheusthewhite/spicetify-themes
-	install = spicetify-themes-git.install
+	install = spicetify-themes.install
 	arch = any
 	license = MIT
 	makedepends = git
 	depends = spicetify-cli
-	provides = spicetify-themes
-	conflicts = spicetify-themes
 	source = spicetify-themes::git+https://github.com/morpheusthewhite/spicetify-themes#commit=512ead30c900c8f412cc07f11870751f4b91c89a
 	md5sums = SKIP
 

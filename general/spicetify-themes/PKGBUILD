@@ -11,12 +11,10 @@ license=('MIT')
 groups=()
 depends=('spicetify-cli')
 makedepends=('git')
-provides=("${pkgname%-git}")
-conflicts=("${pkgname%-git}")
 replaces=()
 backup=()
 options=()
-install=spicetify-themes-git.install
+install="${pkgname}.install"
 source=("$pkgname"::"git+https://github.com/morpheusthewhite/spicetify-themes#commit=$_commit")
 noextract=()
 md5sums=('SKIP')
