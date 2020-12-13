@@ -17,9 +17,8 @@ if [[ "$latest" > "$current" ]];then
   echo -n 'Updating PKGBUILD '
   sed -i "s/${current}/${latest}/g" PKGBUILD
   echo '[Done]'
-  echo -n 'Updating hashes '
+  echo 'Updating hashes:'
   updpkgsums
-  echo '[Done]'
   echo -n 'Updating .SRCINFO '
   makepkg --printsrcinfo > .SRCINFO
   echo '[Done]'
