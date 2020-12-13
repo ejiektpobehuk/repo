@@ -14,10 +14,18 @@ current=$(cat ${edge_dir}/PKGBUILD | grep pkgver= | sed 's/pkgver=//g')
 if [[ "$latest" > "$current" ]];then
   echo "An update available: [${latest}] over [${current}]"
   cd "$edge_dir"
+  echo -n 'Updating PKGBUILD '
   sed -i "s/${current}/${latest}/g" PKGBUILD
+  echo '[Done]'
+  echo -n 'Updating hashes '
   updpkgsums
+  echo '[Done]'
+  echo -n 'Updating .SRCINFO '
   makepkg --printsrcinfo > .SRCINFO
-  makepkg
+  echo '[Done]'
+  echo 'Running a test build'
+  makepkg --noarchive --clean
+  echo 'Committing changes'
   git commit PKGBUILD .SRCINFO -m "ms-edge: ${latest} version bump"
 elif [[ "$latest" == "$current" ]];then
   echo "Current version is up to date at $current"
