@@ -2,17 +2,18 @@
 # Upstream author :  Luke Smith <https://git{hub,lab}.com/lukesmithxyz/>
 
 
-pkgname=mutt-wizard-git
+pkgname=mutt-wizard
+_commit=16de5dc3
 pkgver() {
   cd "${pkgname%-git}"
   printf 'r%s.g%s' "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
-pkgver=r859.g9a3fdb8
+pkgver=r918.g16de5dc
 pkgrel=1
 
 pkgdesc='Simple interface to auto-configure neomutt and isync with safe passwords'
 arch=('any')
-url="https://github.com/lukesmithxyz/${pkgname%-git}"
+url="https://github.com/lukesmithxyz/${pkgname}#commit=${_commit}"
 license=('GPL3')
 
 provides=("${pkgname%-git}")
