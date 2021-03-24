@@ -11,7 +11,7 @@ license=('GPL3')
 depends=('git')
 makedepends=('go')
 optdepends=('xdg-utils: open bugs in browser')
-source=("git+${url}.git#tag=${pkgver}")
+source=("git+${url}.git#tag=v${pkgver}")
 sha256sums=('SKIP')
 
 build() {
