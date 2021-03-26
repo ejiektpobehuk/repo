@@ -5,7 +5,7 @@ _packdir="usr/share/vim/vimfiles/pack/coc/start/${_extname}"
 url='https://github.com/neoclide/coc-json'
 pkgdesc='Json language extension for coc.nvim'
 
-pkgname="${_variant}-${_extname}-git"
+pkgname="${_variant}-${_extname}"
 provides=("${_variant}-${_extname}")
 conflicts=("${_variant}-${_extname}")
 arch=('any')
