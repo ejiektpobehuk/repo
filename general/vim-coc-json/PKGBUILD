@@ -13,7 +13,7 @@ depends=("${_variant}-coc")
 makedepends=('yarn' 'npm' 'git')
 license=('MIT')
 source=("${_extname}::git+${url}.git")
-pkgver=1.2.6.r0.g66b482d
+pkgver=1.3.4.r1.g6bb083d
 pkgrel=1
 sha256sums=('SKIP')
 
