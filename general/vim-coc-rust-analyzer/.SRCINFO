@@ -1,6 +1,6 @@
-pkgbase = vim-coc-rust-analyzer-git
+pkgbase = vim-coc-rust-analyzer
 	pkgdesc = rust-analyzer extension for coc.nvim
-	pkgver = r464.4b3847f
+	pkgver = r863.c2e4648
 	pkgrel = 1
 	url = https://github.com/fannheyward/coc-rust-analyzer
 	arch = any
@@ -14,5 +14,5 @@ pkgbase = vim-coc-rust-analyzer-git
 	source = coc-rust-analyzer::git+https://github.com/fannheyward/coc-rust-analyzer.git
 	sha256sums = SKIP
 
-pkgname = vim-coc-rust-analyzer-git
+pkgname = vim-coc-rust-analyzer
 

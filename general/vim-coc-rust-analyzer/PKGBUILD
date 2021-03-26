@@ -5,7 +5,7 @@ _packdir="usr/share/vim/vimfiles/pack/coc/start/${_extname}"
 url='https://github.com/fannheyward/coc-rust-analyzer'
 pkgdesc='rust-analyzer extension for coc.nvim'
 
-pkgname="${_variant}-${_extname}-git"
+pkgname="${_variant}-${_extname}"
 provides=("${_variant}-${_extname}")
 conflicts=("${_variant}-${_extname}")
 arch=('any')
@@ -13,7 +13,7 @@ depends=("${_variant}-coc")
 makedepends=('yarn' 'npm' 'git')
 license=('MIT')
 source=("${_extname}::git+${url}.git")
-pkgver=r464.4b3847f
+pkgver=r863.c2e4648
 pkgrel=1
 sha256sums=('SKIP')
 
