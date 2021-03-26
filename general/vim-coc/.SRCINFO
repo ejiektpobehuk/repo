@@ -1,0 +1,20 @@
+pkgbase = vim-coc
+	pkgdesc = Intellisense engine for Vim8 & Neovim, full language server protocol support as VSCode
+	pkgver = 0.0.80
+	pkgrel = 3
+	url = https://github.com/neoclide/coc.nvim
+	arch = any
+	license = MIT
+	makedepends = yarn
+	depends = vim
+	depends = nodejs
+	optdepends = npm: for installing coc extensions
+	optdepends = yarn: for installing coc extensions
+	optdepends = watchman: for workspace_didChangeWatchedFiles feature
+	provides = vim-coc
+	conflicts = vim-coc
+	source = https://github.com/neoclide/coc.nvim/archive/c90a07eec847d38909702454c9e096ac6d392aff.zip
+	sha256sums = 3942014f681bfe2b25f3653fbb1108dbaf1de9f4f6993e9770a7fd42a92014f2
+
+pkgname = vim-coc
+
