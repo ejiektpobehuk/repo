@@ -1,5 +1,7 @@
 name: pacops
-on: [push]
+on:
+  schedule:
+    - cron: '0 5 * * *'
 jobs:
   check-ms-edge-version:
     runs-on: ubuntu-latest
