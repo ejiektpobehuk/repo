@@ -1,0 +1,9 @@
+name: pacops
+on: [push]
+jobs:
+  check-ms-edge-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: PacOps in Docker
+        uses: docker://ejiek/pacops:0.0.1
