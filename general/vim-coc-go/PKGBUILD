@@ -5,7 +5,7 @@ _packdir="usr/share/vim/vimfiles/pack/coc/start/${_extname}"
 url='https://github.com/josa42/coc-go'
 pkgdesc='Go language server extension using gopls for coc.nvim'
 
-pkgname="${_variant}-${_extname}-git"
+pkgname="${_variant}-${_extname}"
 provides=("${_variant}-${_extname}")
 conflicts=("${_variant}-${_extname}")
 arch=('any')
@@ -14,7 +14,7 @@ makedepends=('yarn' 'git')
 license=('MIT')
 source=("${_extname}::git+${url}.git"
         'package.json.patch')
-pkgver=0.13.3.r6.ga0e68ff
+pkgver=0.13.3.r16.gac95c04
 pkgrel=1
 sha256sums=('SKIP'
             'c694b3c9def3ddb1bce2dfcef6721a43a9458e96c117e9a2ba911e4b4bfd492b')
