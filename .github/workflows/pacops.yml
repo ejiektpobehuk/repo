@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: PacOps in Docker
-        uses: docker://ejiek/pacops:0.0.1
+        uses: docker://ejiek/pacops:0.0.2
         with:
           entrypoint: /usr/bin/pacops
           args: general/microsoft-edge-dev-bin/PKGBUILD
