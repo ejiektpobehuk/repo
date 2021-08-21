@@ -11,4 +11,4 @@ jobs:
         uses: docker://ejiek/pacops:0.0.2
         with:
           entrypoint: /usr/bin/pacops
-          args: general/microsoft-edge-dev-bin/PKGBUILD
+          args: package general/microsoft-edge-dev-bin/PKGBUILD
