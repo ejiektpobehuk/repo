@@ -9,5 +9,5 @@ jobs:
       - name: PacOps in Docker
         uses: docker://ejiek/pacops:0.0.2-2
         with:
-          entrypoint: /usr/sbin/ls
-          args: -lA
+          entrypoint: /usr/bin/pacops
+          args: package general/microsoft-edge-dev-bin
