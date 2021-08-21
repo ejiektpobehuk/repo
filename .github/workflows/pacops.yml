@@ -9,4 +9,4 @@ jobs:
       - name: PacOps in Docker
         uses: docker://ejiek/pacops:0.0.2
         with:
-          entrypoint: /usr/bin/ls -lA
+          entrypoint: /usr/sbin/ls -lA
