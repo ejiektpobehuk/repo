@@ -10,4 +10,4 @@ jobs:
         uses: docker://ejiek/pacops:next
         with:
           entrypoint: /usr/bin/pacops
-          args: package general/microsoft-edge-dev-bin
+          args: package general/microsoft-edge-dev-bin/PKGBUILD
