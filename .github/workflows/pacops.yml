@@ -11,3 +11,6 @@ jobs:
         with:
           entrypoint: /usr/bin/pacops
           args: package general/microsoft-edge-dev-bin/PKGBUILD
+        env:
+          PACOPS_COMMIT: true
+          PACOPS_SRCINFO: true
