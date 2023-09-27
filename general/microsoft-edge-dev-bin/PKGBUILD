@@ -5,7 +5,7 @@
 pkgname=microsoft-edge-dev-bin
 _pkgname=microsoft-edge-dev
 _pkgshortname=msedge-dev
-pkgver=119.0.2109.1
+pkgver=119.0.2116.0
 pkgrel=1
 pkgdesc="A browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier"
 arch=('x86_64')
@@ -28,7 +28,7 @@ _channel=dev
 source=("https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/${_pkgname}_${pkgver}-1_amd64.deb"
         "microsoft-edge-dev.sh"
         "Microsoft Standard Application License Terms - Standalone (free) Use Terms.pdf")
-sha256sums=('6482fc083f1e6ff26f26cf0ff46a13fb25d671c4bdae8a8f97a883cfed0aecb2'
+sha256sums=('ada2d11521d9c876b12a2e841bad9521b716dbd1d38d39c1170ec824555b9b92'
             '285afe53b2cd617ae7f4930a1d0befe12a97ae31c30cfad74e97bf695c6f6a8a'
             'edf2ed596eb068f168287fc76aa713ad5e0afb59f0a0a47a4f29c0c124ade15e')
 
